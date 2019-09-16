@@ -1,0 +1,190 @@
+.header{
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.myInfo{
+    background-color:burlywood
+}
+
+.login{
+    position: absolute;
+    right:30%;
+    top: 10%
+}
+
+.myInfo li ul{
+    background-color: blanchedalmond;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:100px;
+    z-index:200;
+}
+.myInfo li:hover ul {
+    display:inline-block;
+    }
+.login button{
+    font-size: 20px
+}
+.nav{
+    margin-top:10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.nav ul{
+    font-size: 0px;
+}
+.nav ul li{
+    font-size: 20px;
+    padding: 10px 25px;
+    display: inline-block;
+    border: 1px solid;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.board{
+    text-align: center;
+    padding-left: 10%;}
+.board iframe{
+    margin:0px auto;
+}
+.footer{
+    height: 1em;
+}
+.search{
+	text-align: center;
+}
+.myBoard{
+	text-align: center;
+}
+.myComment{
+	margin: 10% auto;
+	pedding: 10% auto;
+}
+.container{
+    width: 70%;
+    margin: 10 auto;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.table-bordered{
+    border-style: solid 1px;
+    margin: 10 auto;
+    width: 80%;
+}
+.pull-right{
+    margin-right:5px; 
+    float: right;
+
+}
+.pull-left{
+    margin-left: 5px;
+    float:left;
+}
+form{
+    width:62%;
+    margin: 50px auto;
+}
+table.type06 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 10px;
+}
+table.type06 th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+}
+table.type06 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+}
+table.type06 .even {
+    background: #efefef;
+}
+table.type09 {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+	width: 80%;
+}
+table.type09 thead th {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+table.type09 tbody th {
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #f3f6f7;
+}
+table.type09 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.category {
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.title {
+    text-align: left;
+    width: 500px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.writer {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.date {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.cnt {
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type09 td.markcnt {
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}

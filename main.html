@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="mlogo.png" width="500px">
+        <div class="login">
+            <button>
+                로그인
+            </button>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="">댄스</a></li>
+            <li><a href="">락</a></li>
+            <li><a href="">발라드</a></li>
+            <li><a href="">R&B</a></li>
+            <li><a href="">힙합</a></li>
+            <li><a href="">팝송</a></li>
+        </ul>
+    </div>
+    <div class="board">
+        <div class="container">
+            <table class="type09">
+                <thead>
+                    <tr>
+                        <th scope="cols">번호</th>
+                        <th scope="cols">제목</th>
+                        <th scope="cols">글쓴이</th>
+                        <th scope="cols">날짜</th>
+                        <th scope="cols">조회수</th>
+                        <th scope="cols">찜회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td class="title">노래방에서 - 장범준 / 노래 좋네요~</td>
+                        <td class="writer">김강운</td>
+                        <td class="date">190529</td>
+                        <td class="cnt">3</td>
+                        <td class="markcnt">5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td class="title">Coldplay - viva la vida</td>
+                        <td class="writer">노현건</td>
+                        <td class="date">190528</td>
+                        <td class="cnt">11</td>
+                        <td class="markcnt">5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td class="title">이 노래 ㄹㅇ 강추 꼭 들어보세요</td>
+                        <td class="writer">서동환</td>
+                        <td class="date">190528</td>
+                        <td class="cnt">17</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td class="title">노래방에서 - 장범준 / 노래 좋네요~</td>
+                        <td class="writer">김강운</td>
+                        <td class="date">190527</td>
+                        <td class="cnt">21</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td class="title">Coldplay - viva la vida</td>
+                        <td class="writer">노현건</td>
+                        <td class="date">190527</td>
+                        <td class="cnt">21</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td class="title">이 노래 ㄹㅇ 강추 꼭 들어보세요</td>
+                        <td class="writer">서동환</td>
+                        <td class="date">190527</td>
+                        <td class="cnt">41</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td class="title">노래방에서 - 장범준 / 노래 좋네요~</td>
+                        <td class="writer">김강운</td>
+                        <td class="date">190527</td>
+                        <td class="cnt">51</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td class="title">Coldplay - viva la vida</td>
+                        <td class="writer">노현건</td>
+                        <td class="date">190526</td>
+                        <td class="cnt">30</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td class="title">이 노래 ㄹㅇ 강추 꼭 들어보세요</td>
+                        <td class="writer">서동환</td>
+                        <td class="date">190526</td>
+                        <td class="cnt">41</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td class="title">노래방에서 - 장범준 / 노래 좋네요~</td>
+                        <td class="writer">김강운</td>
+                        <td class="date">190525</td>
+                        <td class="cnt">51</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td class="title">Coldplay - viva la vida</td>
+                        <td class="writer">노현건</td>
+                        <td class="date">190525</td>
+                        <td class="cnt">61</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class="title">이 노래 ㄹㅇ 강추 꼭 들어보세요</td>
+                        <td class="writer">서동환</td>
+                        <td class="date">190525</td>
+                        <td class="cnt">71</td>
+                        <td class="markcnt">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pager">
+            <ul>
+                <c:if test="${ curPageNum > 5 && !empty kwd }">
+                    <li><a href="/mysite/board?page=${ blockStartNum - 1 }&kwd=${ kwd }">◀</a></li>
+                </c:if>
+
+                <c:if test="${ curPageNum > 5 }">
+                    <li><a href="/mysite/board?page=${ blockStartNum - 1 }">◀</a></li>
+                </c:if>
+
+                <c:forEach var="i" begin="${ blockStartNum }" end="${ blockLastNum }">
+                    <c:choose>
+                        <c:when test="${ i > lastPageNum }">
+                            <li>${ i }</li>
+                        </c:when>
+                        <c:when test="${ i == curPageNum }">
+                            <li class="selected">${ i }</li>
+                        </c:when>
+                        <c:when test="${ !empty kwd}">
+                            <li><a href="/mysite/board?a=search&page=${ i }&kwd=${ kwd }">${ i }</a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li><a href="/mysite/board?page=${ i }">${ i }</a></li>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+
+                <c:if test="${ lastPageNum > blockLastNum && !empty kwd }">
+                    <li><a href="/mysite/board?a=search&page=${ blockLastNum + 1 }&kwd=${ kwd }">▶</a></li>
+                </c:if>
+
+                <c:if test="${ lastPageNum > blockLastNum }">
+                    <li><a href="/mysite/board?page=${ blockLastNum + 1 }">▶</a></li>
+                </c:if>
+            </ul>
+        </div>
+    </div>
+    <%
+		if (session.getAttribute("signedUser") != null) {
+	%>
+    <div class="writeBT">
+        <button>
+            <a href="WriteBoard.html"> <img src="write.png" width="32px height=" 32px">
+            </a>
+        </button>
+    </div>
+    <%
+		}
+	%>
+    </div>
+    <div class="footer">
+        금오공과대학교 컴퓨터소프트웨어공학과 웹프로그래밍 월89 14김강운 14서동환 16노현건</span>
+    </div>
+</body>
+
+</html>
